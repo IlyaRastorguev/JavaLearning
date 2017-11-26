@@ -26,9 +26,9 @@ public class Pool {
     }
 
     public static void main(String[] arg) {
-        int cores = Runtime.getRuntime().availableProcessors();
+        int cores = Runtime.getRuntime().availableProcessors(); // получение количества доступных потоков
         System.out.println("There is " + cores + " are available now");
-        ExecutorService service = Executors.newFixedThreadPool(2);
+        ExecutorService service = Executors.newFixedThreadPool(2); // создание пула на конечное число потоков, выше которого выполняться не будет
 
         List<java.util.concurrent.Future> futures = new ArrayList<>();
 
