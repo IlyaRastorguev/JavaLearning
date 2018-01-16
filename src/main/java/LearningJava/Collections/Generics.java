@@ -38,9 +38,10 @@ public class Generics {
 //         коллекции обьектов не являются наследниками друг друга
        }
 
-        public <T extends B> List<T> howWeCanDo(List<T> list) { // в качестве B могут быть и интерфейсы тоже
-           B obj = new B();
-//           list.add(obj); в теории должно работать
+        public <T extends B> List<T> howWeCanDo(List<T> list, T cat) {
+           // в качестве B могут быть и интерфейсы тоже
+          // B obj =  new B();
+           list.add(cat);// в теории должно работать
 //          при этом всем элементам коллекции будут доступны только методы из B
             return list;
         }
