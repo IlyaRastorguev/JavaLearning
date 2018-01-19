@@ -1,8 +1,8 @@
-package LearningJava;
+package ch03;
 
 import java.util.Scanner;
 
-public class Test {
+public class Echo {
 
     public static void main(String[] args) {
         String line;
